@@ -11,71 +11,95 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <title> Home Page </title>
 </head>
 
 <body>
-    <section id="home">
-        <div class="container-fluid">
-            <div class="row">
-                <nav class="nav-section">
-                    <h2 class="logo">
-                        Logo
-                    </h2>
+    <div class="container-fluid body_container">
+        <section id="home">
+            <div class="container-fluid iconsbg">
+                <img src="Pixels/chat.png" width="50px" height="50px" style="position: relative;filter: brightness(0) saturate(100%) invert(98%) sepia(2%) saturate(242%) hue-rotate(138deg) brightness(118%) contrast(100%);">
+                <img src="Pixels/download.png" width="50px" height="50px" style="position: relative;filter: brightness(0) saturate(100%) invert(98%) sepia(2%) saturate(242%) hue-rotate(138deg) brightness(118%) contrast(100%);">
+                <img src="Pixels/youtube.png" width="50px" height="50px" style="position: relative;filter: brightness(0) saturate(100%) invert(98%) sepia(2%) saturate(242%) hue-rotate(138deg) brightness(118%) contrast(100%);">
+                <img src="Pixels/image-gallery.png" width="50px" height="50px" style="position: relative;filter: brightness(0) saturate(100%) invert(98%) sepia(2%) saturate(242%) hue-rotate(138deg) brightness(118%) contrast(100);">
+                <img src="Pixels/mic.png" width="50px" height="50px" style="position: relative;filter: brightness(0) saturate(100%) invert(98%) sepia(2%) saturate(242%) hue-rotate(138deg) brightness(118%) contrast(100%);">
+                <img src="Pixels/upload.png" width="50px" height="50px" style="position: relative;filter: brightness(0) saturate(100%) invert(98%) sepia(2%) saturate(242%) hue-rotate(138deg) brightness(118%) contrast(100%);">
+                <img src="Pixels/user.png" width="50px" height="50px" style="position: relative;filter: brightness(0) saturate(100%) invert(98%) sepia(2%) saturate(242%) hue-rotate(138deg) brightness(118%) contrast(100%);">
+                <img src="Pixels/video.png" width="50px" height="50px" style="position: relative;filter: brightness(0) saturate(100%) invert(98%) sepia(2%) saturate(242%) hue-rotate(138deg) brightness(118%) contrast(100%);">
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent nav-section">
+                <h2> Logo </h2> 
+                <div class="container">
                     <ul>
-                        <li> <a href="#" class="explore"> Explore </a> </li>
-                        <li> <a href="#" class="about"> About </a></li>
-                        <li> <a href="#" class="connect"> Connect </a></li>
+                        <li><a href="#"> Explore </a></li>
+                        <li><a href="#"> About </a></li>
+                        <li><a href="#"> Connect </a></li>
                     </ul>
-                </nav>
+                        <button class="btn outline-dark" id="icontoggle"> ... </button>
+                </div>
+            </nav>
+            <div class="container-fluid">
+                <div class="row intro_block">
+                    <div class="col-lg-12">
+                        <div class="intro">
+                            <h1 class="intro-text">
+                                Developers ! Welcome To
+                            </h1>
+                            <p class="intro-desc" style="font-size: 22px;color: white;">
+                                the vast <span
+                                    style="color:darkolivegreen; border-radius:16px ; background-image: linear-gradient(#C1E899, #c0ecab); padding: 0px 5px;">PIX + Textual </span>
+                                network ...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 details_box child1">
+                        <img src="Pixels/network.png" class="icon1">
+                        <div class="details_desc1">
+                            <h3> Connectivity </h3>
+                            <hr>
+                            <p>
+                                Get connected with our partners and developers <br> working around you ...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 details_box child2">
+                        <img src="Pixels/network.png" class="icon1">
+                        <div class="details_desc1">
+                            <h3> Connectivity </h3>
+                            <hr>
+                            <p>
+                                Get connected with our partners and developers <br> working around you ...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 details_box child3">
+                        <img src="Pixels/network.png" class="icon1">
+                        <div class="details_desc1">
+                            <h3> Connectivity </h3>
+                            <hr>
+                            <p>
+                                Get connected with our partners and developers <br> working around you ...
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="intro">
-                        <h1 class="intro-text">
-                            Developers Welcome To
-                        </h1>
-                        <p class="intro-desc">
-                            the vast <span style="color: #E6F0DC; background-image: linear-gradient(#C1E899, #c0ecab);">PIX</span> network ...
-                        </p>
-                    </div>
-                </div>
-                <div class="col details_box child1">
-                    <img src="Pixels/network.png" class="icon1">
-                    <div class="details_desc1">
-                        <h3> Connectivity </h3>
-                        <hr>
-                        <p>
-                            Get connected with our partners and developers <br> working around you ...
-                        </p>
-                    </div>
-                </div>
-                <div class="col details_box child2">
-                    <img src="Pixels/network.png" class="icon1">
-                    <div class="details_desc1">
-                        <h3> Connectivity </h3>
-                        <hr>
-                        <p>
-                            Get connected with our partners and developers <br> working around you ...
-                        </p>
-                    </div>
-                </div>
-                <div class="col details_box child3">
-                    <img src="Pixels/network.png" class="icon1">
-                    <div class="details_desc1">
-                        <h3> Connectivity </h3>
-                        <hr>
-                        <p>
-                            Get connected with our partners and developers <br> working around you ...
-                        </p>
-                    </div>
-                </div>
+            <div class="navdots">
+                <ul>
+                    <li data-target="home" class="active"></li>
+                    <li data-target="category"></li>
+                </ul>
             </div>
-        </div>
-    </section>
+
+        </section>
+        <section id="catagory">
+
+        </section>
     </div>
 </body>
 
@@ -112,4 +136,5 @@
 
     
 
+    
 -->

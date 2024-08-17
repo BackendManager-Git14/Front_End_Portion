@@ -8,11 +8,17 @@ body, html {
     background-color: blanchedalmond;
     font-family: "Poppins", sans-serif;
 }
+.body_container{
+    height: 100vh;
+    width: 100%;
+    padding: 0px 0px;
+}
 ::-webkit-scrollbar{
     display: none;
 }
 section {
     height: 100vh;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,6 +40,73 @@ section {
         background-position: 0% 85%;
     }
 }
+.iconsbg{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+.iconsbg img:nth-child(1){
+    top: 10%;
+    animation: slide_left 20s linear infinite;
+}
+.iconsbg img:nth-child(2){
+    top: 20%;
+    animation: slide_left 12s linear infinite;
+}
+.iconsbg img:nth-child(3){
+    top: 30%;
+    animation: slide_left 17s linear infinite;
+}
+.iconsbg img:nth-child(4){
+    top: 40%;
+    animation : slide_left 15s linear infinite;
+}
+.iconsbg img:nth-child(5){
+    top: 50%;
+    animation: slide_left 18s linear infinite;
+}
+.iconsbg img:nth-child(6){
+    top: 60%;
+    animation: slide_left 20s linear infinite;
+}
+.iconsbg img:nth-child(7){
+    top: 70%;
+    animation: slide_left 15s linear infinite;
+}
+.iconsbg img:nth-child(8){
+    top: 80%;
+    animation: slide_left 19s linear infinite;
+}
+@keyframes slide_left{
+    0%{
+        left: 100%;
+        transform: rotate(330deg);
+        opacity: 0;
+    }
+    25%{
+        left: 75%;
+        transform: rotate(330deg);
+        opacity: 0.5;
+    }
+    50%{
+        left: 50%;
+        transform: rotate(330deg);
+        opacity: 1;
+    }
+    75%{
+        left: 25%;
+        transform: rotate(330deg);
+        opacity: 0.5;
+    }
+    
+    100%{
+        left: 0%;
+        transform: rotate(330deg);
+        opacity: 0;
+    }
+}
+
 .nav-section{
     height: 100px;
     width: 100%;
@@ -57,11 +130,26 @@ section {
     text-decoration: none;
     color: white;
 }
+#icontoggle{
+    font-size: 45px;
+    padding-bottom: 30px;
+    padding-top: 0px;
+    display: none;
+}
+.intro_block{
+    position: absolute;
+    z-index: 1;
+    top: 14rem;
+    left: 2rem;
+}
 .details_box{
     height: 200px;
     width: 200px;
-    background-color: crimson;
+    background: rgba(255,255,255,0.2);
+    border: 1px solid rgba(255,255,255,0.3);
     border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+    backdrop-filter: blur(5px);
 }
 .child1{
     position: absolute;
@@ -78,7 +166,6 @@ section {
     top: 24.5rem;
     left: 30rem;
 }
-
 
 .icon1{
     height: 90px;
@@ -104,6 +191,49 @@ section {
     padding: 10px 10px;
     display: none;
     transform: translate(10px, 95px);
+}
+.nav-dots{
+    position: fixed;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+}
+
+.nav-dots ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-dots li {
+    width: 10px;
+    height: 10px;
+    background-color: #aaa;
+    border-radius: 50%;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nav-dots li.active {
+    background-color: #fff;
+}
+#catagory{
+        background-image: linear-gradient(60deg,rgb(0, 132, 255) , rgb(0, 255, 55));
+        background-size: 400% 400%;
+        animation: home_animate 15s ease infinite;
+
+    @keyframes home_animate {
+        0%{
+            background-position: 0% 85%;
+        }
+        50%{
+            background-position: 100% 20%;
+        }
+        100%{
+            background-position: 0% 85%;
+        }
+    }
 }
 /*
 #home { background: #4CAF50; }
