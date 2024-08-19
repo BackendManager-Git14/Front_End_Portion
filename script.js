@@ -25,3 +25,23 @@ navLi.forEach((li) => {
         document.getElementById(li.getAttribute("data-target")).scrollIntoView({ behavior: "smooth" });
     });
 });
+
+
+/*--------------------------------------------- connect js ----------------------------------------------------------*/
+
+let con_current_form = 0;
+let con_form_grp = document.querySelector('.form_container');
+let con_form_length = document.querySelectorAll('.con_forms').length;
+
+function con_moveslide(index_add){
+    con_current_form += index_add;
+    if(con_current_form >= con_form_length){
+        con_current_form = 0;
+    }
+    else if(con_current_form < 0){
+        con_current_form = con_current_form - 1;
+    }
+
+    con_form_grp.style.transform = `translateX(-${con_current_form*100}%)`;
+}
+

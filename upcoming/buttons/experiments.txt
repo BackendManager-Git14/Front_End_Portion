@@ -87,3 +87,28 @@ ul li a:hover {
   text-shadow: 0 0 5px #ffee10;
 }
 
+
+------------------------------------------------ Live caption -----------------------------------------------------------
+
+<html>
+<body>
+<h1>HTML DOM Events</h1>
+<h2>The oninput Event</h2>
+
+<p>Assign an oninput event to an input element.</p>
+
+<p>Write something in the text field.</p>
+
+Enter name: <input type="text" value="Mickey" oninput="myFunction()" id="input_box">
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var input = document.getElementById('input_box').value;
+  document.getElementById("demo").innerHTML = input;
+}
+</script>
+
+</body>
+</html>

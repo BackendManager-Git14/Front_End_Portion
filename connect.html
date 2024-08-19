@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Connect With Us </title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row page_section">
+            <a href="#" style="cursor: pointer;"> <img src="Pixels/pix-quote2.png"
+                    style="filter: brightness(0) saturate(100%) invert(98%) sepia(2%) saturate(242%) hue-rotate(138deg) brightness(118%) contrast(100%);position: relative;top: 5px;left: 15px;"
+                    height="60px" width="200px" /></a>
+            <ul>
+                <li><a href="#"> Explore </a></li>
+                <li><a href="#"> About </a></li>
+                <li><a href="#"> Connect </a></li>
+            </ul>
+            <button class="btn outline-dark" id="icontoggle"> ... </button>
+
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col multi_Steps">
+                    <div class="form_container">
+                        <form action="" class="con_forms" id="form1">
+                            <h2 class="formhead">
+                                Tell us Your Name ...
+                            </h2>
+                            <label for="con_name"> Your  </label>
+                            <input type="text" id="con_name" name="con_name" class="form-control" placeholder="">
+                            <label for="con_bdate"> BirthDay </label>
+                            <input type="date" id="con_bdate" name="con_bdate" class="form-control" placeholder="">
+                            <button type="button" class="btn btn-success" id="con_next" onclick="con_moveslide(1)"> Baaju Hat ne </button> 
+                         </form>
+                        <form action="" class="con_forms" id="form2">
+                            <h1 id="user_name">
+            
+                            </h1>
+                            <h2 class="formhead">
+                                How can we Contact <br> you ...
+                            </h2>
+                            <label for="con_email"> Email </label>
+                            <input type="text" name="con_email" id="con_email" class="form-control" placeholder="">
+                            <label for="con_phn"> Contact </label>
+                            <input type="text" name="con_phn" id="con_phn" class="form-control" placeholder="">
+                            <button type="button" class="btn btn-success" onclick="con_moveslide(1)"> Baaju Hat ne </button> 
+                            <button type="button" class="btn btn-primary" onclick="con_moveslide(-1)"> Aagho Hat ne </button> 
+                        </form>
+                        <form action="" class="con_forms" id="form3">
+                            <h2 class="formhead">
+                                New Login 
+                            </h2>
+                            <label for="con_u_name"> User-Name </label>
+                            <input type="text" id="con_u_name" name="con_u_name" class="form-control" placeholder="">
+                            <label for="con_pswd"> Password </label>
+                            <input type="password" id="con_pswd" name="con_pswd" class="form-control" placeholder="">
+                            <label for="con_c_pswd"> Confirm </label>
+                            <input type="text" id="con_c_pswd" name="con_c_pswd" class="form-control" placeholder="">
+                            <button type="button" class="btn btn-success" onclick="con_moveslide(1)"> Baaju Hat ne </button> 
+                            <button type="button" class="btn btn-primary" onclick="con_moveslide(-1)"> Aagho Hat ne </button> 
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
