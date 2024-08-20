@@ -287,25 +287,23 @@ section {
     color: antiquewhite;
     position: relative;
     top: 2rem;
-    right: 30px;
+    right: 15px;
 }
 
-.multi_Steps #con_name_lbl{
+.con_forms label{
     background-color: #4932b2;
     position: absolute;
     font-weight: 500;
-    padding: 10px 10px;
     color: antiquewhite;
-    transform: translate(25%, 3.9rem);
+    font-size: 15px;
 }
 
-.multi_Steps #con_name{
+.con_forms input{
     width: 20rem;
-    font-weight: 500;
+    font-weight: 400;
     padding: 5px 15px;
     font-size: 20px;
-    color: lightgreen;
-    transform: translate(19px, 60px);
+    color: rgb(0, 255, 0);
     background-color: transparent;
     outline: none;
     border-radius: 12px;
@@ -313,47 +311,121 @@ section {
     border: 2px solid white;
 }
 
-
-.multi_Steps #con_bdate_lbl{
-    position: absolute;
-    color: aliceblue;
+.con_forms .con_nextstep{
+    position: relative;
+    background-color: springgreen;
+    color: black;
+    font-size: 15px;
+    padding: 10px 10px;
     font-weight: 500;
+    width: 80px;
+    border: none;
+    border-radius: 16px;
+}
+
+.con_forms .con_prevstep{
+    position: relative;
+    background-color: cyan;
+    font-weight: 500;
+    border: none;
+    width: 80px;
+    font-size: 15px;
+    padding: 10px 10px;
+    border-radius: 16px;
+}
+
+#con_name{ 
+    transform: translate(19px, 60px);
+}
+
+#con_name_lbl{
+    width: 85px;
+    left: 35px;
+    transform: translateY(70px);
+    margin: 0px 10px;
+    transition: 0.5s;
+}
+
+
+#con_bdate_lbl{
+    position: absolute;
     top: 12.5rem;
     left: 1.8rem;
 }
 
-.multi_Steps #con_bdate{
-    width: 20rem;
+#con_bdate{
     position: relative;
     top: 6.3rem;
     font-size: 16px;
     padding: 10px 10px;
-    background-color: transparent;
-    border: 2px solid white;
     color: white;
     transform: translateX(18px);
 }
 
-#con_name:focus{
+input:focus{
     border: 2px solid #08d8fa;
 }
 
 #con_name:focus + #con_name_lbl{
     color: #08d8fa;
-    font-size: 14px;
-    padding: 0px 5px;
+    position: absolute;
+    font-size: 13px;
+    margin: 0px 10px;
     z-index: 1;
-    transform: translate(35%, 1.8rem);
+    left: 35px;
+    width: 75px;
+    transform: translateY(51px);
+}
+#con_email{
+    transform: translate(19px, 59px);
+}
+#con_email_lbl{
+    left: 50px;
+    top: 46%;
 }
 
-.con_nextstep1{
+#con_phn{
     position: relative;
-    background-color: springgreen;
-    border: 1px solid white;
-    color: black;
-    font-weight: 500;
-    transform: translate(80%, 90px);
+    top: 20%;
+    left: 18px;
 }
+#con_phn_lbl{
+    left: 50px;
+    bottom: 130px;
+}
+#con_u_name_lbl{
+    left: 50px;
+    top: 107px;
+}
+
+#con_u_name{
+    position: relative;
+    left: 20px;
+    top: 50px;
+}
+
+#con_pswd_lbl{
+    left: 50px;
+    top: 182px;
+}
+
+#con_pswd{
+    position: relative;
+    left: 20px;
+    top: 80px;
+}
+
+#con_c_pswd_lbl{
+    left: 50px;
+    bottom: 123px;
+}
+
+#con_c_pswd{
+    position: relative;
+    left: 20px;
+    top: 110px;
+}
+
 /*
 #home { background: #4CAF50; }
 #category { background: #2196F3; }

@@ -39,38 +39,46 @@
                             <h2 class="formhead">
                                 Tell us Your <br> Name ...
                             </h2>
-                            <label for="con_name" id="con_name_lbl"> Your Name  </label>
                             <input type="text" id="con_name" name="con_name" class="con_input" placeholder="">
+                            <label for="con_name" id="con_name_lbl"> Your Name  </label>
+                            
+                            <input type="date" id="con_bdate" name="con_bdate" class="con_input" placeholder="">
                             <label for="con_bdate" id="con_bdate_lbl"> BirthDay </label>
-                            <input type="date" id="con_bdate" name="con_bdate" class="form-control con_input" placeholder="">
-                            <button type="button" class="con_nextstep1 btn-success" id="con_next" onclick="con_moveslide(1)"> Baaju Hat ne </button> 
+                            <button type="button" class="con_nextstep" style="transform: translate(8rem, 150px);" id="con_next" onclick="con_moveslide(1)"> Got It </button> 
                          </form>
                         <form action="" class="con_forms" id="form2">
-                            <h1 id="user_name">
+                            <h1 id="user_name" style="position: relative;transform: translate(10px, 10px);">
             
                             </h1>
-                            <h2 class="formhead">
+                            <h2 class="formhead" style="padding: 10px 10px;transform: translate(20px, 20px);">
                                 How can we Contact <br> you ...
                             </h2>
-                            <label for="con_email"> Email </label>
-                            <input type="text" name="con_email" id="con_email" class="form-control con_input" placeholder="">
-                            <label for="con_phn"> Contact </label>
-                            <input type="text" name="con_phn" id="con_phn" class="form-control con_input" placeholder="">
-                            <button type="button" class="btn btn-success" onclick="con_moveslide(1)"> Baaju Hat ne </button> 
-                            <button type="button" class="btn btn-primary" onclick="con_moveslide(-1)"> Aagho Hat ne </button> 
+                            
+                            <input type="text" name="con_email" id="con_email" class="con_input" placeholder="">
+                            <label for="con_email" id="con_email_lbl"> Email </label>
+
+                            <input type="text" name="con_phn" id="con_phn" class="con_input" placeholder="">
+                            <label for="con_phn" id="con_phn_lbl"> Contact </label>
+
+                            <button type="button" id="con_nextstep2" class="con_nextstep" style="top: 30%;left: 20%;" onclick="con_moveslide(1)"> Alright </button> 
+                            <button type="button" id="con_prevstep2" class="con_prevstep" style="top: 30%;left: 30%;" onclick="con_moveslide(-1)"> Previous </button> 
                         </form>
                         <form action="" class="con_forms" id="form3">
                             <h2 class="formhead">
                                 New Login 
                             </h2>
-                            <label for="con_u_name"> User-Name </label>
-                            <input type="text" id="con_u_name" name="con_u_name" class="form-control con_input" placeholder="">
-                            <label for="con_pswd"> Password </label>
-                            <input type="password" id="con_pswd" name="con_pswd" class="form-control con_input" placeholder="">
-                            <label for="con_c_pswd"> Confirm </label>
-                            <input type="text" id="con_c_pswd" name="con_c_pswd" class="form-control con_input" placeholder="">
-                            <button type="button" class="btn btn-success" onclick="con_moveslide(1)"> Baaju Hat ne </button> 
-                            <button type="button" class="btn btn-primary" onclick="con_moveslide(-1)"> Aagho Hat ne </button> 
+                            
+                            <input type="text" id="con_u_name" name="con_u_name" class="con_input" placeholder="">
+                            <label for="con_u_name" id="con_u_name_lbl"> User-Name </label>
+
+                            <input type="password" id="con_pswd" name="con_pswd" class="con_input" placeholder="">
+                            <label for="con_pswd" id="con_pswd_lbl"> Password </label>
+                            
+                            <input type="text" id="con_c_pswd" name="con_c_pswd" class="con_input" placeholder="">
+                            <label for="con_c_pswd" id="con_c_pswd_lbl"> Confirm </label>
+
+                            <button type="button" class="con_nextstep" style="top: 38%;left: 35%;" id="con_nextstep3" onclick="con_moveslide(1)"> Let's Go </button> 
+                            <!-- <button type="button" class="con_prevstep" id="con_prevstep3" onclick="con_moveslide(-1)"> Previous </button>  -->
                         </form>
                     </div>
                 </div>
