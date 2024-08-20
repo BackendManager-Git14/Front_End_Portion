@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- https://www.youtube.com/watch?v=tuPHm37D0h0 for background animation -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,32 +18,32 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid connect_bg">
         <div class="row page_section">
-            <a href="#" style="cursor: pointer;"> <img src="Pixels/pix-quote2.png"
+            <a href="homepage.html" style="cursor: pointer;"> <img src="Pixels/pix-quote2.png"
                     style="filter: brightness(0) saturate(100%) invert(98%) sepia(2%) saturate(242%) hue-rotate(138deg) brightness(118%) contrast(100%);position: relative;top: 5px;left: 15px;"
                     height="60px" width="200px" /></a>
             <ul>
                 <li><a href="#"> Explore </a></li>
                 <li><a href="#"> About </a></li>
-                <li><a href="#"> Connect </a></li>
+                <li><a href="connect.html"> Connect </a></li>
             </ul>
             <button class="btn outline-dark" id="icontoggle"> ... </button>
 
         </div>
         <div class="container">
-            <div class="row">
+            <div class="row" style="justify-content: center;">
                 <div class="col multi_Steps">
                     <div class="form_container">
                         <form action="" class="con_forms" id="form1">
                             <h2 class="formhead">
-                                Tell us Your Name ...
+                                Tell us Your <br> Name ...
                             </h2>
-                            <label for="con_name"> Your  </label>
-                            <input type="text" id="con_name" name="con_name" class="form-control" placeholder="">
-                            <label for="con_bdate"> BirthDay </label>
-                            <input type="date" id="con_bdate" name="con_bdate" class="form-control" placeholder="">
-                            <button type="button" class="btn btn-success" id="con_next" onclick="con_moveslide(1)"> Baaju Hat ne </button> 
+                            <label for="con_name" id="con_name_lbl"> Your Name  </label>
+                            <input type="text" id="con_name" name="con_name" class="con_input" placeholder="">
+                            <label for="con_bdate" id="con_bdate_lbl"> BirthDay </label>
+                            <input type="date" id="con_bdate" name="con_bdate" class="form-control con_input" placeholder="">
+                            <button type="button" class="con_nextstep1 btn-success" id="con_next" onclick="con_moveslide(1)"> Baaju Hat ne </button> 
                          </form>
                         <form action="" class="con_forms" id="form2">
                             <h1 id="user_name">
@@ -53,9 +53,9 @@
                                 How can we Contact <br> you ...
                             </h2>
                             <label for="con_email"> Email </label>
-                            <input type="text" name="con_email" id="con_email" class="form-control" placeholder="">
+                            <input type="text" name="con_email" id="con_email" class="form-control con_input" placeholder="">
                             <label for="con_phn"> Contact </label>
-                            <input type="text" name="con_phn" id="con_phn" class="form-control" placeholder="">
+                            <input type="text" name="con_phn" id="con_phn" class="form-control con_input" placeholder="">
                             <button type="button" class="btn btn-success" onclick="con_moveslide(1)"> Baaju Hat ne </button> 
                             <button type="button" class="btn btn-primary" onclick="con_moveslide(-1)"> Aagho Hat ne </button> 
                         </form>
@@ -64,11 +64,11 @@
                                 New Login 
                             </h2>
                             <label for="con_u_name"> User-Name </label>
-                            <input type="text" id="con_u_name" name="con_u_name" class="form-control" placeholder="">
+                            <input type="text" id="con_u_name" name="con_u_name" class="form-control con_input" placeholder="">
                             <label for="con_pswd"> Password </label>
-                            <input type="password" id="con_pswd" name="con_pswd" class="form-control" placeholder="">
+                            <input type="password" id="con_pswd" name="con_pswd" class="form-control con_input" placeholder="">
                             <label for="con_c_pswd"> Confirm </label>
-                            <input type="text" id="con_c_pswd" name="con_c_pswd" class="form-control" placeholder="">
+                            <input type="text" id="con_c_pswd" name="con_c_pswd" class="form-control con_input" placeholder="">
                             <button type="button" class="btn btn-success" onclick="con_moveslide(1)"> Baaju Hat ne </button> 
                             <button type="button" class="btn btn-primary" onclick="con_moveslide(-1)"> Aagho Hat ne </button> 
                         </form>
