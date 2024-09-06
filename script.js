@@ -45,3 +45,12 @@ function con_moveslide(index_add){
     con_form_grp.style.transform = `translateX(-${con_current_form*100}%)`;
 }
 
+const con_name_click = document.getElementById('con_next');
+
+con_name_click.addEventListener('click',function(){
+
+    //console.log("clicked");
+    let user_name = document.getElementById('con_name').value;
+    document.getElementById('form_user_name').innerHTML = "Hello " + user_name + " !!";
+
+})

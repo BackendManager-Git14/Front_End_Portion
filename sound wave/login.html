@@ -1,0 +1,229 @@
+@model SoundWaveOfficial.Models.Membership
+
+@*<!DOCTYPE html>
+    <html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <title> Login and Registration Form in HTML & CSS | CodingLab </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>*@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link rel="stylesheet" href="~/style/LoginStyle.css" />
+<body>
+    <div class="container">
+        <div class="cover">
+            <div class="front">
+                <img src="Sound.gif" alt="">
+            </div>
+        </div>
+        <div class="forms">
+            <div class="form-content">
+                <div class="login-form">
+                    <div class="title">Login</div>
+                    <form action="/Account/Login" method="post">
+                        <div class="input-boxes">
+                            <div class="input-box">
+                                <i class="fas fa-user"></i>
+                                <label for="Username">&nbsp;Username</label>
+                                <input type="text" value="" placeholder="Enter your username" required>&nbsp;
+                                @*@Html.TextBoxFor(m => m.Username, new { @class = "input-boxes input-box input", placeholder = "Enter your username", required="required" })*@
+                            </div>
+                            <div class="input-box">
+                                <i class="fas fa-lock"></i>
+                                <label id="pass">&nbsp;Password</label>
+                                <input type="password" value="" placeholder="Enter your password" required>&nbsp;
+                                @*@Html.PasswordFor(m => m.Password, new { @class = "input input-box", placeholder = "Enter your password", required = "required" })*@
+                            </div>
+                            <div class="text"><a href="#">Forgot password?</a></div>
+                            <div class="button input-box">
+                                <input type="submit" style=" height: 50px; font-size: 22px;" value="Sumbit">
+                            </div>
+                            <div class="text login-text">Don't have an account? <label id="submit-r"><a href="SignUp.html">Sigup now</a></label></div>
+                        </div>
+                    </form>
+                 </div>
+                </div>
+            </div>
+        </div>
+</body>
+@*</html>*@
+
+
+<style>
+body {
+    display: flex;
+    background: black;
+    margin-right:200px;
+    margin-bottom:70px;
+}
+
+.container {
+    position: relative;
+    max-width: 800px;
+    background: black;
+    padding: 40px 30px;
+    border: 2px solid green;
+    box-shadow:0 0 10px green;
+    
+}
+    .container .cover {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        height: 100%;
+        width: 50%;
+        z-index: 98;
+        transition: all 1s ease;
+        transform-origin: left;
+        transform-style: preserve-3d;
+    }
+
+        .container .cover::before {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background: green;
+            opacity: 0.3;
+            z-index: 12;
+        }
+
+        .container .cover img {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            z-index: 10;
+        }
+
+    .container .forms {
+        height: 100%;
+        width: 100%;
+        background: black;
+    }
+
+    .container .form-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+.forms .form-content .title {
+    position: relative;
+    font-size: 35px;
+    font-weight: 500;
+    color: white;
+}
+
+    .forms .form-content .title:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        width: 60px;
+        background: green;
+
+    }
+
+.forms .form-content .input-boxes {
+    margin-top: 60px;
+}
+
+.input-boxes i {
+    color: white;
+    width: 28px;
+}
+
+.forms .form-content .input-box {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    width: 100%;
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.form-content .input-box input {
+    height: 35px;
+    width: 250px;
+    outline: none;
+    border: none;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 2px solid rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    
+}
+#pass{
+    margin-right:25px;
+}
+    .form-content .input-box input:focus,
+    .form-content .input-box input:valid {
+        border-color: green;
+        height: 35px;
+        width: 360px;
+    }
+
+.forms .form-content .text {
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    padding-top: 15px;
+}
+
+    .forms .form-content .text a {
+        text-decoration: none;
+        color: green;
+    }
+
+        .forms .form-content .text a:hover {
+            text-decoration: underline;
+        }
+
+.forms .form-content .button {
+    color: #fff;
+    margin-top: 40px;
+}
+
+    .forms .form-content .button input {
+        color: #fff;
+        background: green;
+        border-radius: 6px;
+        padding: 0;
+        cursor: pointer;
+        transition: all 0.4s ease;
+    }
+
+        .forms .form-content .button input:hover {
+            background: rgb(4, 48, 4);
+        }
+
+.forms .form-content .login-text {
+    text-align: left;
+    margin-top: 25px;
+}
+
+.input-box label {
+    color: rgb(98, 211, 98);
+    width: 26%;
+    font-size: 22px;
+    position: relative;
+    height: 25px;
+    margin-right:20px;
+}
+
+#submit-r {
+    color: green;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+    #submit-r:hover {
+        text-decoration: underline;
+    }
+
+</style>

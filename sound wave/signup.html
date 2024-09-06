@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <div class="cover">
+            <div class="front">
+                <img src="titlebgimg.jpg" alt="">
+            </div>
+        </div>
+        <div class="forms">
+            <div class="form-content">
+                <div class="signup-form">
+                    <div class="title">Sign Up</div>
+                    <form action="#">
+                        <div class="input-boxes">
+                            <div class="input-box">
+                             <i class="fas fa-user"></i>
+                              <label>Username</label>
+                                <input type="text" placeholder="Enter your username" required>
+                            </div>
+                            <div class="input-box">
+                              <i class="fas fa-envelope"></i>
+                              <label>EmailID</label>
+                                <input type="email" placeholder="Enter your email" required>
+                            </div>
+                            <div class="input-box">
+                             <i class="fas fa-phone"></i>
+                              <label>Phone NO</label>
+                                <input type="tel" placeholder="Enter your phone no" required>
+                            </div>
+                            <div class="input-box">
+                             <i class="fas fa-lock"></i>
+                              <label>Password</label>
+                                <input type="password" placeholder="Enter your password" required>
+                            </div>
+                            <div class="input-box">
+                             <i class="fas fa-lock"></i>
+                              <label>Confirm Password</label>
+                                <input type="password" placeholder="Confirm your password" required>
+                            </div>
+                            <div class="input-box">
+                             <i class="fas fa-birthday-cake"></i>
+                              <label>Birth Date</label>
+                                <input type="date" placeholder="Select your birthdate" required>
+                            </div>
+                            <div class="input-box">
+                             <i class="fas fa-file-image"></i>
+                              <label>Select ProfilePhoto</label>
+                                <input type="file"accept="image/*" required>
+                            </div>
+                            <div class="button input-box">
+                                <input type="submit" value="Sign Up">
+                            </div>
+                            <div class="text sign-up-text">Already have an account? <label id="submit-r">Login now</label></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<style>
+  body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    padding: 30px;
+  }
+  .container {
+    position: relative;
+    width:70%;
+    background: black;
+    padding: 40px 30px;
+    perspective: 2600px;
+    border: 2px solid green;
+  }
+  .container .cover {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 50%;
+    z-index: 98;
+    transition: all 1s ease;
+    transform-origin: left;
+    transform-style: preserve-3d;
+  }
+  .container .cover::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: green;
+    opacity: 0.3;
+    z-index: 12;
+  }
+  .container .cover img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 10;
+  }
+  .container .forms {
+    height: 100%;
+    width:50%;
+    background: black;
+  }
+  .container .form-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .forms .form-content .title {
+    position: relative;
+    font-size: 35px;
+    font-weight: 500;
+    color: white;
+  }
+  .forms .form-content .title:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 60px;
+    background: green;
+  }
+  .forms .form-content .input-boxes {
+    margin-top: 30px;
+  }
+  .input-boxes i{
+  color:white;
+  width:35px;
+  padding-right:1px;
+}
+  .forms .form-content .input-box {
+    display: flex;
+    align-items: center;
+    height: 37px;
+    width: 97%;
+    margin: 15px 0;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .form-content .input-box input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  .form-content .input-box input:focus,
+  .form-content .input-box input:valid {
+    border-color: green;
+  }
+  .forms .form-content .text {
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    font-size: 20px;
+  }
+  .forms .form-content .text a {
+    text-decoration: none;
+    color: green;
+  }
+  .forms .form-content .text a:hover {
+    text-decoration: underline;
+  }
+  .forms .form-content .button {
+    color: #fff;
+    margin-top: 25px;
+  }
+  .forms .form-content .button input {
+    color: #fff;
+    background: green;
+    border-radius: 6px;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.4s ease;
+  }
+  .forms .form-content .button input:hover {
+    background: rgb(4, 48, 4);
+  }
+  .input-box label{
+    color:rgb(98, 211, 98);
+    width:85%;
+    font-size:21px;
+    position: relative;
+    height:25px;
+  }
+  #submit-r{
+    color: green;
+    cursor: pointer;
+   font-size: 18px;
+  }
+  #submit-r:hover {
+    text-decoration: underline;
+  }
+ 
+</style>  

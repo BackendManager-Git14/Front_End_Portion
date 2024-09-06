@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+body{
+    background-color:ghostwhite;
+    overflow: hidden;
+    padding: 10px 10px;
+    scroll-behavior: smooth;
+}
+
+.profile-section{
+    display: flex;
+    gap: 20px;
+}
+
+.profile{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 1px black solid;
+}
+.sidebar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100px;
+    background-color: #efeae3;
+    padding: 0.8rem 1.2rem;
+    transition: all 0.5 ease;
+    margin: 10px 10px;
+    border-radius: 12px;
+}
+
+.sidebar.active{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+.sidebar p{
+    opacity: 0;
+}
+
+.sidebar.active p{
+    opacity: 1;
+    font-weight: 500;
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.sidebar .icon-bar{
+    transform: translateY(50%);
+}
+.sidebar.active .icon-bar{
+    transform: translateY(50%);
+}
+
+.sidebar ul{
+    padding: 0;
+}
+
+.sidebar ul li{
+    position: relative;
+    list-style: none;
+    width: 80%;
+    height: 50px;
+    margin: 0.8rem auto;
+}
+.sidebar ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    transition: 0.4s;
+    border-radius: 20px;
+}
+.sidebar ul li a:hover{
+    color: #efeae3;
+    background-color: coral;
+}
+.sidebar ul li a i{
+    min-width: 50px;
+    font-size: 20px;
+    text-align: center;
+    height: 50px;
+    border-radius: 12px;
+    line-height: 50px;
+}
+.sidebar .icon-text{
+    opacity: 0;
+}
+.sidebar.active .icon-text{
+    opacity: 1;
+}
+
+.sidebar ul li .icon-high{
+    position: absolute;
+    top: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    left: 90%;
+    transform: translate(50%,-50%);
+    box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    padding: 0.5rem 1rem;
+    z-index: 10;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.sidebar ul li:hover .icon-high{
+    opacity: 1;
+    
+}
+
+.sidebar.active ul li:hover .icon-high{
+    display: none;
+}
+
+.sidebar.active ~ .main{
+    left: 258px;
+    width: calc(100% - 258px);
+    margin-left: 10px;
+    
+}
+.main{
+    position: relative;
+    width: calc(100% - 100px);
+    padding: 1.2rem;
+    min-height: 100vh;
+    left: 100px;
+    transition: all 0.5s ease;
+    background-color: blanchedalmond;
+    border-radius: 14px;
+    margin-left: 10px;
+    
+}

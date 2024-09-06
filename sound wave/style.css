@@ -1,0 +1,372 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+#navbar{
+    background-color:green;
+}
+.nav-item .nav-link{
+  color:black;
+  margin:15px 10px 10px 10px;
+  font-weight:bold;
+  font-size:25px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+  transition: 0.5s;
+}
+.nav-item .nav-link:hover{
+    background:linear-gradient(
+        315deg,rgb(128, 150, 128),rgb(156,238,156));
+    border-radius: 5px;
+}
+#navbar form button{
+    background:black;
+    color:white;
+    border:1px solid;
+    cursor:pointer;
+    position:relative;
+}
+.container-fluid{
+    background-image:url("https://raw.githubusercontent.com/riyaa08/minor-project/main/sound%20wave/img6.webp");
+    background-size:cover;
+}
+.container-fluid img{
+    height:70px;
+    width:80px;
+}
+.bg-img{
+    height:80vh;
+    width: 98.5vw;
+    object-fit:cover;
+    position:absolute;
+    top:98px;
+    z-index: -1;
+    border:3px solid white;
+    opacity:0.5;
+}
+.d-flex{
+    height:40px;
+    margin-top:20px;
+    margin-left:250px;
+}
+#search{
+    background:linear-gradient(315deg,rgb(128,150,128),rgb(156,238,156));
+    border:1.5px solid;
+    border-color: white;
+}
+#sbtn:hover{
+    color:white;
+    background-color: green;
+}
+#nm{
+    color:rgb(1, 26, 1);
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}
+#msg{
+    color:rgb(20, 76, 12);
+    font-weight:bold;
+}
+#btn{
+    width:140px;
+    height:60px;
+    font-weight:bold;
+    border:2px solid;
+    border-radius:40px;
+    border-color:green;
+    transition:0.5s ease;
+    cursor:pointer;
+    background:linear-gradient(
+        315deg,rgb(128, 150, 128),rgb(156,238,156));
+    color:rgb(11, 71, 11);
+    margin:10px 0px 50px 0px;
+}
+#btn:hover{
+    background-color: rgb(2, 58, 2);
+    color:black;
+    border-radius: 5px;
+}
+#btn a{
+    font-size:18px;
+    text-decoration: none;
+    color:black;
+}
+.content{
+    padding-top:110px;
+    padding-left:130px;
+}
+.blockquote-footer{
+    padding-top:8px;
+    color:black;
+}
+.row{
+    display:flex;
+    padding:30px 15px;
+    flex-wrap:wrap;
+    align-items: flex-start;
+}
+.box{
+    max-width:320px;
+    margin:40px auto;
+    border: 1 px solid green;
+    border-radius: 25px;
+    padding:10px 15px;
+}
+.box h3{
+    color:rgb(32, 200, 32);
+    margin-left:20px;
+    font-size:x-large;
+}
+span {
+    color:white;
+}
+.box img{
+     width:100%;
+     height:300px;
+     border-radius: 25px;
+     border:2px solid rgb(133, 205, 133);
+}
+.box_bottom{
+    padding:20px 10px;
+}
+.box_bottom h5{
+    margin :8px 0;
+    color:rgb(171, 209, 171);
+}
+.box_bottom .right{
+    color:rgb(196, 246, 196);
+    float:right;
+    margin-top:-38px;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    position:relative;
+}
+.box_bottom .right i{
+    top:15px;
+    left:13px;
+    position:absolute;
+}
+.carousel-dark .carousel-indicators [data-bs-target]{
+    background-color: rgb(37, 195, 37);
+    width:5%;
+}
+.carousel-control-prev-icon,.carousel-control-next-icon{
+    height:6vh;
+    width:3vw;
+    border-radius: 50%;
+}
+.carousel-control-prev-icon{
+    margin-right: 120px;
+    margin-bottom:120px;
+}
+.carousel-control-next-icon{
+    margin-left:120px;
+    margin-bottom: 120px;
+}
+.heading h1{
+    text-align: center;
+    color:rgb(6, 180, 6);
+    margin-top:40px;
+    margin-bottom:50px;
+    font-size: 30px;
+}
+.u-box{
+    background-color: rgb(113, 206, 113);
+    height:2px;
+    margin-bottom: 40px;
+    width:20%;
+    margin-left:538px;
+    box-shadow: 2.5px 2.5px green;
+}
+.musicr-box{
+    margin-left:110px;
+    margin-right:110px;
+}
+#r-img{
+    height:70px;
+    width:85px;
+    border-radius:8%;
+    border:1px solid rgb(177, 243, 177);
+}
+#h h1,.table-group-divider{
+    color:rgb(13, 243, 13);
+}
+.p-btn{
+    margin-top:17px;
+    color:rgb(158, 233, 173);
+}
+#title span{
+    color:rgb(147, 238, 147);
+}
+.music-header{
+    width: 100%;
+    height:200px;
+    border-bottom: 1px solid #555;
+    background-image: linear-gradient(#001709,#1a8b0b); 
+    background-image: url('https://raw.githubusercontent.com/riyaa08/minor-project/main/sound%20wave/upload-img.jpg');
+    background-size:100%;
+    background-position:auto;
+    border:2px solid green;
+    opacity:0.8;
+}
+.music-header .title{
+    width: 500px;
+    height: 50px;
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 75px;
+    font-weight: bold;
+    color:white;
+    font-size:40px;
+    font-family:'Times New Roman', Times, serif;
+}
+.ubg-img{
+    height:120vh;
+    width:98.7vw;
+    object-fit:cover;
+    position:absolute;
+    z-index: -1;
+    border:2px solid green;
+    opacity: 0.5;
+}
+main {
+    display: flex;
+    min-height: 80vh;
+    padding: 20px;
+    font-family:'Times New Roman', Times, serif;
+    color:white;
+}
+.upload-container {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: auto;
+    margin-top:30px;
+    margin-bottom:30px;
+    max-width:500px;
+    box-shadow: 0 4px 8px whitesmoke;
+    background-color: black;
+    font-size:20px;
+    color:white;
+    opacity: 0.9;
+    background: url('https://raw.githubusercontent.com/riyaa08/minor-project/main/sound%20wave/img18.jpg');
+}
+.upload-container h2 {
+    margin-top: 5px;
+    padding-bottom:20px;
+    text-align: center;
+    color:rgb(158, 228, 158);
+}
+.upload-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+.upload-container input[type="text"],
+.upload-container select,
+.upload-container input[type="file"] {
+    width: calc(100% - 22px);
+    margin-bottom: 15px;
+    padding:8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color:rgb(154, 204, 154);
+    color: black;  
+}
+.upload-container button {
+    margin-top:20px;
+    width: 100%;
+    padding: 10px;
+    background:linear-gradient(rgb(120, 183, 120),rgb(12, 113, 12));
+    border: none;
+    border:1px solid;
+    border-radius: 4px;
+    font-size:25px;
+    cursor: pointer;
+}
+.upload-container button:hover {
+    background:linear-gradient(rgb(19, 236, 19),rgb(8, 112, 8));
+}
+
+#footer{
+    color:black;
+    background:linear-gradient(
+    715deg,rgb(169, 232, 169),rgb(14, 145, 14)
+    );
+    width:100%;
+    height:320px;
+    font-family:'Times New Roman', Times, serif;
+    padding-top: 25px;
+    margin-bottom: 0;
+    position:absolute;
+    border:2px solid green;
+}
+.f-box,.s-box,.t-box{
+    padding-left:20px;
+    display:inline-block;
+    width:33%;
+}
+.f-box,.s-box,.t-box li{
+    list-style-type: none;
+    font-size: 20px;
+}
+#about{
+    text-align: center;
+    padding-top:30px;
+    font-size:23px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#about i{
+    padding-top:20px;
+}
+
+
+
+
+
+/*song css*/
+.container{
+       min-height:80vh;
+}
+.bottom{
+    position:fixed;
+    width:100%;
+    height:120px;
+    background:linear-gradient(rgb(145, 244, 145),rgb(4, 88, 4));
+    bottom:0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border:1px solid;
+}
+.icons{
+    margin-top:14px;
+}
+.icons i{
+    cursor: pointer;
+    margin-left: 40px;
+}
+#myprogressbar{
+    width:60vw;
+    background: black;
+}
+.songinfo{
+    top: 4vw;
+    position:absolute;
+    left:13vw;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:20px;
+}
+.songinfo img{
+    width:70px;
+    margin-right:15px;
+    opacity:0;
+    transition:opacity 0.4s ease-in;
+}
