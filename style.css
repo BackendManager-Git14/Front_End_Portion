@@ -1,4 +1,12 @@
 /*--------------------------------------------- home css ----------------------------------------------------------*/
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 
 body, html {
     margin: 0px 0px;
@@ -256,178 +264,7 @@ section {
 }
 
 /*--------------------------------------------- connect css ----------------------------------------------------------*/
-.connect_bg{
-    height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(239deg, #08d8fa, #fd74f5, #fcc710);
-    padding: 0px 0px;   
-}
-.multi_Steps{
-    height: 400px;
-    max-width: 380px;
-    position: relative;
-    padding: 0px 0px;
-    overflow: hidden;
-    transform: translateY(40%);
-    background-color: #4932b2;
-    border-radius: 20px;
-}
-.form_container{
-    height: 400px;
-    width: 380px;
-    display: flex;
-    transition: 0.5s ease;
-    position: absolute;
-}
-.multi_Steps form{
-    position: relative;
-    min-width: 380px;
-    padding: 0px 10px;
-}
 
-.multi_Steps .formhead{
-    padding: 0px 37px;
-    color: antiquewhite;
-    position: relative;
-    top: 2rem;
-    right: 15px;
-}
-
-.con_forms label{
-    background-color: #4932b2;
-    position: absolute;
-    font-weight: 500;
-    color: antiquewhite;
-    font-size: 15px;
-}
-
-.con_forms input{
-    width: 20rem;
-    font-weight: 400;
-    padding: 5px 15px;
-    font-size: 20px;
-    color: rgb(0, 255, 0);
-    background-color: transparent;
-    outline: none;
-    border-radius: 12px;
-    transition: 0.5s;
-    border: 2px solid white;
-}
-
-.con_forms .con_nextstep{
-    position: relative;
-    background-color: springgreen;
-    color: black;
-    font-size: 15px;
-    padding: 10px 10px;
-    font-weight: 500;
-    width: 80px;
-    border: none;
-    border-radius: 16px;
-}
-
-.con_forms .con_prevstep{
-    position: relative;
-    background-color: cyan;
-    font-weight: 500;
-    border: none;
-    width: 80px;
-    font-size: 15px;
-    padding: 10px 10px;
-    border-radius: 16px;
-}
-
-#con_name{ 
-    transform: translate(19px, 60px);
-}
-
-#con_name_lbl{
-    width: 85px;
-    left: 35px;
-    transform: translateY(70px);
-    margin: 0px 10px;
-    transition: 0.5s;
-}
-
-
-#con_bdate_lbl{
-    position: absolute;
-    top: 12.5rem;
-    left: 1.8rem;
-}
-
-#con_bdate{
-    position: relative;
-    top: 6.3rem;
-    font-size: 16px;
-    padding: 10px 10px;
-    color: white;
-    transform: translateX(18px);
-}
-
-input:focus{
-    border: 2px solid #08d8fa;
-}
-
-#con_name:focus + #con_name_lbl{
-    color: #08d8fa;
-    position: absolute;
-    font-size: 13px;
-    margin: 0px 10px;
-    z-index: 1;
-    left: 35px;
-    width: 75px;
-    transform: translateY(51px);
-}
-#con_email{
-    transform: translate(19px, 59px);
-}
-#con_email_lbl{
-    left: 50px;
-    top: 44%;
-}
-
-#con_phn{
-    position: relative;
-    top: 20%;
-    left: 18px;
-}
-#con_phn_lbl{
-    left: 50px;
-    bottom: 138px;
-}
-#con_u_name_lbl{
-    left: 50px;
-    top: 107px;
-}
-
-#con_u_name{
-    position: relative;
-    left: 20px;
-    top: 50px;
-}
-
-#con_pswd_lbl{
-    left: 50px;
-    top: 182px;
-}
-
-#con_pswd{
-    position: relative;
-    left: 20px;
-    top: 80px;
-}
-
-#con_c_pswd_lbl{
-    left: 50px;
-    bottom: 123px;
-}
-
-#con_c_pswd{
-    position: relative;
-    left: 20px;
-    top: 110px;
-}
 
 /*--------------------------------------------- feed css ----------------------------------------------------------*/
 

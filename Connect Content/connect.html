@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- https://www.youtube.com/watch?v=tuPHm37D0h0 for background animation -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Connect With Us </title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="connect.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="row page_section">
+            <a href="/homepage.html" style="cursor: pointer;"> <img src="/Pixels/pix-quote2.png" style="filter: brightness(0) saturate(100%) invert(98%) sepia(2%) saturate(242%) hue-rotate(138deg) brightness(118%) contrast(100%);position: relative;top: 5px;left: 15px;" height="60px" width="200px" /> </a>
+            <ul>
+                <li><a href="#"> Explore </a></li>
+                <li><a href="#"> About </a></li>
+                <li><a href="connect.html"> Connect </a></li>
+            </ul>
+            <button class="btn outline-dark" id="icontoggle"> ... </button>
+        </div>
+        <div class="container box">
+            <div class="inner-box">
+                <div class="form-section">
+                    <form action="/homepage.html" autocomplete="off" class="join-form">
+                        <div class="logo">
+                            <h2 class="logo-text"> Logo </h2>
+                        </div>
+                        <div class="heading">
+                            <h3> Welcome Back </h3>
+                            <h6> Not Registered yet? </h6>
+                            <a href="#" class="toggle"> Sign Up </a>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" autocomplete="off" class="input-field" name="user-name" id="user-name" required />
+                            <label for="user-name"> Name </label>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" autocomplete="off" class="input-field" name="user-password" id="user-password" required />
+                            <label for="user-password"> Password </label>
+                        </div>                            
+                        <input type="submit" value="Let's Go" id="btn-login" class="form-btns">
+                    </form>
+                    <form action="/homepage.html" autocomplete="off" class="join-reg-form">
+                        <div class="logo">
+                            <h2 class="logo-text"> Logo </h2>
+                        </div>
+                        <div class="heading">
+                            <h3> Get Started ... </h3>
+                            <h6> Already done? </h6>
+                            <a href="#" class="toggle"> Log in </a>
+                        </div>
+                        <div class="form-elements">
+                            <div class="form-group">
+                                <input type="text" autocomplete="off" class="input-field" name="user-reg-name" id="user-reg-name" required />
+                                <label for="user-reg-name"> Username </label>
+                            </div>
+                            <div class="radio-btns">
+                                <label for="gender" style="position: relative;top: 15px;height: 22px;left: -18px;">Gender:</label>
+                                    <div class="form-group" style="height: 37px;width: 90px;margin: 0.5rem;">
+                                                                <input type="radio" name="rbtn-gender" id="user-gender-male" class="rbtn" value="Male" required> 
+                                                                <div class="radio-tile">
+                                                                    <label for="rbtn-gender-male" class="rbtn-labels" style="color: black;font-weight: 600;"> M </label>
+                                                                    <img src="/Pixels/male-gender.png" alt="" height="20" width="20">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group" style="height: 37px;width: 91px;margin: 0.5rem;">
+                                                                <input type="radio" name="rbtn-gender" id="user-gender-female" class="rbtn" value="Female" required> 
+                                                                <div class="radio-tile">
+                                                                    <label for="rbtn-gender-male" class="rbtn-labels" style="color: black;font-weight: 600;"> F </label>
+                                                                    <img src="/Pixels/femenine.png" alt="" height="20" width="20">
+                                                                </div>
+                                                            </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="date" name="user-date" class="input-field" id="user-date" autocomplete="off" />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" autocomplete="off" class="input-field" name="user-mail" id="user-mail" required />
+                                <label for="user-mail"> Email </label>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" autocomplete="off" class="input-field" name="user-reg-password" id="user-reg-password" required />
+                                <label for="user-reg-password"> Password </label>
+                            </div> 
+                            <div class="form-group">
+                                <input type="password" autocomplete="off" class="input-field" name="user-con-password" id="user-con-password" required />
+                                <label for="user-con-password"> Confirm </label>
+                            </div>
+                            <div class="form-group-checkbox" style="display: flex;font-size: 10px;gap: 10px;">
+                                <input type="checkbox" autocomplete="off" class="user-checkbox" name="terms" id="terms" required="">
+                                <p style="margin: 0;"> I have agreed the Terms and Conditions of this site by checking this box .</p>
+                            </div>   
+                        </div>                       
+                        <input type="submit" value="Alright" id="btn-register" class="form-btns">
+                    </form>
+                </div>
+                <div class="carousel">
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="connect.js"></script>
+</body>
+
+</html>
