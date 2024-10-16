@@ -20,3 +20,11 @@ toggleform.forEach((btn) => {
         mainsection.classList.toggle('form-mode');
     })
 })
+
+/* logic of validations */
+
+const registerbtn = document.getElementById('btn-register');
+
+registerbtn.addEventListener('submit',function(){
+    
+})

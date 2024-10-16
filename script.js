@@ -27,30 +27,6 @@ navLi.forEach((li) => {
 });
 
 
-/*--------------------------------------------- connect js ----------------------------------------------------------*/
+/*---------------------------------------------------------- Feed.js -------------------------------------------------- */
 
-let con_current_form = 0;
-let con_form_grp = document.querySelector('.form_container');
-let con_form_length = document.querySelectorAll('.con_forms').length;
 
-function con_moveslide(index_add){
-    con_current_form += index_add;
-    if(con_current_form >= con_form_length){
-        con_current_form = 0;
-    }
-    else if(con_current_form < 0){
-        con_current_form = con_current_form - 1;
-    }
-
-    con_form_grp.style.transform = `translateX(-${con_current_form*100}%)`;
-}
-
-const con_name_click = document.getElementById('con_next');
-
-con_name_click.addEventListener('click',function(){
-
-    //console.log("clicked");
-    let user_name = document.getElementById('con_name').value;
-    document.getElementById('form_user_name').innerHTML = "Hello " + user_name + " !!";
-
-})

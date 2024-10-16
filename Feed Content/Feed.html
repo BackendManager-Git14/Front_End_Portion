@@ -7,26 +7,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="feedstyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="sidebar actie">
+    <div class="sidebar">
         <div class="profile-section">
             <a href="#" class="nav-link">
                 <img src="/Pixels/user.png" alt="" class="profile">
@@ -57,7 +51,7 @@
                     <span class="icon-high"> Explore </span>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="#" id="btn-add" class="btn-toggle-add">
                         <i class="bx bx-message-square-add"></i>
                         <span class="icon-text"> Add </span>
                     </a>
@@ -66,17 +60,21 @@
             </ul>
         </div>
     </div>
-    <div class="main">
+    <div class="main" id="bgblur">
         <div class="container">
             <div class="feedcontent">
                 <div class="row d-flex w-100">
-                    <div class="col-8 d-flex"
-                        style="flex-direction: column;width: 100%;max-width: 800px;height: 100vh;overflow-y: scroll;flex: 1;">
+                    <div class="col-8 d-flex" style="flex-direction: column;width: 100%;max-width: 800px;height: 100vh;overflow-y: scroll;flex: 1;">
 
                         <div class="cards">
+                            
                             <div class="user-data d-flex gap-3">
                                 <img src="/Pixels/user.png" alt="" height="30" width="30">
                                 <h5> Navri_Praja_14</h5>
+                            </div>
+                            <div class="options">
+                                <input type="button" value="Edit" id="btn-edit" class="btn-options">
+                                <input type="button" value="Delete" id="btn-delete" class="btn-options">
                             </div>
                             <img src="/Pixels/3443874.jpg" alt=""
                                 style="width: 100%;height: auto;border-radius: 15px;object-fit: cover;height: 400px;">
@@ -86,6 +84,10 @@
                             <div class="user-data d-flex gap-3">
                                 <img src="/Pixels/user.png" alt="" height="30" width="30">
                                 <h5> Navri_Praja_14</h5>
+                            </div>
+                            <div class="options">
+                                <input type="submit" value="Edit" id="btn-edit" class="btn-options">
+                                <input type="button" value="Delete" id="btn-delete" class="btn-options">
                             </div>
                             <img src="https://img.freepik.com/free-photo/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg?t=st=1725649593~exp=1725650193~hmac=723ad453e9ca981c47705d07be39caf0b73feaee38f8d86812fc9d1c94d9d077"
                                 alt=""
@@ -105,7 +107,66 @@
             </div>
         </div>
     </div>
-    <script src="/script.js"></script>
+    <div class="toggle-box">
+        <a href="#" class="btn-close"> <i class="bx bx-x"></i> </a>
+        <div class="toggle-form-section">
+            <input type="hidden" value="user-name" id="user-name" name="user-name">
+            <h4 class="header-text" style="width: fit-content;">
+                Alright Post Your Topic ...
+            </h4>
+            <input type="file" name="user-post" id="user-post" hidden>
+            <label for="user-post" style="height: 150px;width: 450px;margin: 0 8.5rem">
+                <div class="previmage" id="previmage"> </div>
+                <div style="display:flex;flex-direction:column;">
+                    <i class="bx bx-upload"></i>
+                    <p style="width: fit-content;position: relative;transform: translate(220px, -80px);font-weight: 600;"> Upload </p>
+                </div>
+            </label>
+            <div class="form-group">
+                <label for="user-caption" style="width: fit-content;display: inline-block;"> Caption : </label>
+                <textarea name="user-caption" id="user-caption" placeholder="Caption here..."></textarea>
+            </div>
+            <input type="button" id="btn-post" name="btn-post" class="btn btn-outline-dark" value="Post">
+        </div>        
+    </div>
+    <div class="toggle-box">
+        <a href="#" class="btn-close"> <i class="bx bx-x"></i> </a>
+        <div class="toggle-form-section">
+            <input type="hidden" value="user-name" id="user-name" name="user-name">
+            <h4 class="header-text" style="width: fit-content;">
+                Edit Your Post Content ...
+            </h4>
+            <input type="file" name="user-post-edit" id="user-post" hidden>
+            <label for="user-post" style="height: 150px;width: 450px;margin: 0 8.5rem">
+                <div class="previmage" id="previmage"> </div>
+                <div style="display:flex;flex-direction:column;">
+                    <i class="bx bx-upload"></i>
+                    <p style="width: fit-content;position: relative;transform: translate(220px, -80px);font-weight: 600;"> Upload </p>
+                </div>
+            </label>
+            <div class="form-group">
+                <label for="user-caption" style="width: fit-content;display: inline-block;"> Caption : </label>
+                <textarea name="user-caption-edit" id="user-caption" placeholder="Caption here..."></textarea>
+            </div>
+            <input type="button" id="btn-edit" name="btn-edit" class="btn btn-outline-dark" value="Edit">
+        </div>        
+    </div>
+    <div class="toggle-confirm">
+        <a href="#" class="btn-close" style="position: absolute;top: 5px;right: 5px;font-size: 15px;text-decoration: none;"> <i class="bx bx-x"></i> </a>
+        <h3 class="warning-icon">⚠</h3>
+        <p class="warning-text">
+            Are you sure you want to delete this post ?
+        </p>
+        <div class="confirm-btns-div" style="display: flex;gap: 20px;">
+            <button type="submit" id="btn-yes" value="" name="btn-yes" class="confirm-btns"> Yes </button>
+            <button type="submit" id="btn-no" value="" name="btn-no" class="confirm-btns"> No </button>
+        </div>
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="feed.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,18 @@
+let button = document.querySelector('.btn');
+                            buttons.forEach(button => {
+                            let text = button.textContent;
+                            button.innerHTML='';
+                            for (let char of text){
+                                let span = document.createElement('span');
+                                span.textContent = char === ' ' ? '\u00A0' : char;
+                                button.appendChild(span)
+                            }
+                            let spans = button.querySelector('span');
+                            button.addEventListner('mouseenter',() => {
+                                spans.forEach((span,index) => {
+                                    setTimeout(()=>{
+                                        span.classList.add('Lets Go');
+                                    }, index =50)
+                                })
+                            })
+                        })
